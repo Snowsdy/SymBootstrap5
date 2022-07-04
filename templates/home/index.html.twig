@@ -4,16 +4,31 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container">
-		<div class="card bg-dark text-white mx-auto" 
-		data-aos="fade-zoom-in" 
-		data-aos-easing="ease-in-back" 
-		data-aos-delay="3000" 
-		style="width: 36rem;">
+	<div class="container overflow-hidden">
+
+		{# Logo du site #}
+		<div class="card bg-dark text-white mx-auto mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800" style="width: 32rem;">
 			<div class="card-body">
 				<h2 class="card-text text-center">Bienvenue sur mon PortFolio !</h2>
 			</div>
 			<img src="imgs/logo.png" class="card-img-bottom img-fluid" alt="Logo">
+		</div>
+
+		{# Test du padding & Test de Font Awesome #}
+		<h2 class="text-white my-5 text-center">Test du Padding :</h2>
+		<div class="row gy-5">
+			<div class="col-6">
+				<div class="p-3 border bg-light">J'AIME LAURIE <i class="fa-solid fa-heart"></i></div>
+			</div>
+			<div class="col-6">
+				<div class="p-3 border bg-light">J'AIME LAURIE <i class="fa-solid fa-heart"></i></div>
+			</div>
+			<div class="col-6">
+				<div class="p-3 border bg-light">J'AIME LAURIE <i class="fa-solid fa-heart"></i></div>
+			</div>
+			<div class="col-6">
+				<div class="p-3 border bg-light">J'AIME LAURIE <i class="fa-solid fa-heart"></i></div>
+			</div>
 		</div>
 	</div>
 {% endblock %}

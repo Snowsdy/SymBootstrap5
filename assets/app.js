@@ -17,3 +17,6 @@ import 'bootstrap';
 // Initialize AOS
 import AOS from 'aos';
 AOS.init();
+
+// Import FontAwesome
+import '@fortawesome/fontawesome-free';
