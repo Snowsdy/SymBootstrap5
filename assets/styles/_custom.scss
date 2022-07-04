@@ -4,6 +4,8 @@
 $font-family-sans-serif: 'Quicksand', sans-serif;
 $font-family-monospace: 'Space Mono', monospace;
 
+// BACKGROUND
+
 @mixin sp-layout {
     @media screen and (max-width: 750px) {
         @content;
@@ -25,7 +27,15 @@ $font-family-monospace: 'Space Mono', monospace;
     @return $random_range;
 }
 
+// FIX : To use the Search Bar : 
+.navbar, .container {
+    z-index: 1;
+}
+
+// EOF
+
 .stars {
+    z-index: auto;
     position: fixed;
     top: 0;
     left: 0;
