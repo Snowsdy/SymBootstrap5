@@ -28,8 +28,12 @@ $font-family-monospace: 'Space Mono', monospace;
 }
 
 // FIX : To use the Search Bar : 
-.navbar, .container {
-    z-index: 1;
+.navbar {
+    z-index: 3;
+}
+
+.container {
+    z-index: 2;
 }
 
 // EOF
