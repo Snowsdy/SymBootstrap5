@@ -53,7 +53,7 @@ $font-family-monospace: 'Space Mono', monospace;
     --star-tail-length: 6em;
     --star-tail-height: 2px;
     --star-width: calc(var(--star-tail-length) / 6);
-    --fall-duration: 4.5s;
+    --fall-duration: 6s;
     --tail-fade-duration: var(--fall-duration);
 
     position: absolute;
