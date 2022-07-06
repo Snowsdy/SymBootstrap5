@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}SymBootstrap5 Blog{% endblock %}
+{% block title %}SymBootstrap5 Blog
+{% endblock %}
 
 {% block body %}
 	<div class="container">
@@ -13,20 +14,50 @@
 			<img src="imgs/logo.png" class="card-img-bottom img-fluid" alt="Logo">
 		</div>
 
-		{# Content #}
+		{# Présentation #}
 		<h1 class="text-white my-5 text-center text-decoration-underline">Présentation</h2>
 
 		<div class="card mx-auto mt-5 w-100" data-aos="fade-down" style="width: 32rem;">
 			<div class="card-body">
 				<p class="fs-2 lh-base font-monospace text-wrap text-center mb-0">
 					Bonjour ! Bienvenue sur mon site web !
-					Je me présente : Vincenzo. J'ai 22 ans. Je suis passioné par la programmation depuis
-					l'âge de 17 ans, le jour où j'ai découvert ce que c'était ! Depuis, je m'intéresse principalement aux langages orientées objet telles que le
+				</p>
+				<p class="fs-2 lh-base font-monospace text-wrap text-center mb-0">
+					Je me présente : Vincenzo. J'ai 22 ans. Je suis passioné par la programmation depuis l'âge de 17 ans, le jour où j'ai découvert ce que c'était ! Depuis, je m'intéresse principalement aux langages orientées objet telles que le
 					<i class="fa-brands fa-java"></i>
 					Java, le
 					<i class="fa-brands fa-php"></i>
 					PHP ou encore le C++ !
 				</p>
+			</div>
+		</div>
+
+		<h1 class="text-white my-5 text-center text-decoration-underline">Mes Services</h2>
+
+		<div class="row text-center text-white">
+			<div class="col fs-4 mb-5">
+				<div class="card bg-dark mx-auto" style="width: 26rem;">
+					<img src="https://picsum.photos/400" class="card-img-top" alt="Service n°1">
+					<div class="card-body">
+						<h5 class="card-title fs-3">Réalisation d'Application de Bureau</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col fs-4 mb-5">
+				<div class="card bg-dark mx-auto" style="width: 26rem;">
+					<img src="https://picsum.photos/400" class="card-img-top" alt="Service n°1">
+					<div class="card-body">
+						<h5 class="card-title fs-3">Création de Sites Web</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col fs-4 mb-5">
+				<div class="card bg-dark mx-auto" style="width: 26rem;">
+					<img src="https://picsum.photos/400" class="card-img-top" alt="Service n°1">
+					<div class="card-body">
+						<h5 class="card-title fs-3">Réalisation d'Applications Mobiles</h5>
+					</div>
+				</div>
 			</div>
 		</div>
 
