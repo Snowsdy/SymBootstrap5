@@ -13,7 +13,6 @@ $font-family-monospace: 'Space Mono', monospace;
 }
 
 .stars-bg {
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -36,7 +35,7 @@ $font-family-monospace: 'Space Mono', monospace;
     z-index : 1;
 }
 
-// EOF
+// End FIX
 
 .stars {
     z-index: auto;
@@ -49,12 +48,12 @@ $font-family-monospace: 'Space Mono', monospace;
 }
 
 .star {
-    $star-count: 50;
+    $star-count: 30;
     --star-color: var(--bs-blue);
     --star-tail-length: 6em;
     --star-tail-height: 2px;
     --star-width: calc(var(--star-tail-length) / 6);
-    --fall-duration: 9s;
+    --fall-duration: 4.5s;
     --tail-fade-duration: var(--fall-duration);
 
     position: absolute;
@@ -76,10 +75,10 @@ $font-family-monospace: 'Space Mono', monospace;
 
     @for $i from 1 through $star-count {
         &:nth-child(#{$i}) {
-            --star-tail-length: #{random_range(500em, 750em) / 100};
-            --top-offset: #{random_range(0vh, 10000vh) / 100};
-            --fall-duration: #{random_range(6000, 12000s) / 1000};
-            --fall-delay: #{random_range(0, 10000s) / 1000};
+            --star-tail-length: #{calc(random_range(500em, 750em) / 100)};
+            --top-offset: #{calc(random_range(0vh, 10000vh) / 100)};
+            --fall-duration: #{calc(random_range(6000, 12000s) / 1000)};
+            --fall-delay: #{calc(random_range(0, 10000s) / 1000)};
         }
     }
 
